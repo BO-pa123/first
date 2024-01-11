@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Links</title>
+</head>
+<body>
+  <header>
+      W3schools
+  </header>
+  <h1 id="top">Links to Sections of The Same Page</h1>
+  <section>
+    <ul>
+      <!-- Link to every section in the page -->
+      <li><a href="#section1">#section1</a></li>
+      <li><a href="#section2">#section2</a></li>
+      <li><a href="#section3">#section3</a></li>
+      <li><a href="#section4">#section4</a></li>
+      <li><a href="#section5">#section5</a></li>
+      <li><a href="#section6">#section6</a></li>
+    </ul>
+  </section>
+
+  <section id="section1">
+    <h3>(#section1) Section 1</h3>
+    <p>w3schools are very famous website for learning webdevelopment.it isavailable in both offline and online.lets learn about interlinking.</p>
+  </section>
+
+  <section id="section2">
+    <h3>(#section2) Section 2</h3>
+    <p>Traditionally, fragment identifier links are those clickable items in your page that do not require the browser to request anything new from the server. These links allow users to jump to certain targeted sections of your web page.
+
+</p>
+  </section>
+  <section id="section3">
+    <h3>(#section3) Section 3</h3>
+    <p>There are two steps to creating such links: marking something as a possible target of a link and creating the link to that target.
+
+</p>
+  </section>
+  <section id="section4">
+    <h2>(#section4) Section 4</h2>
+    <p>The modern HTML way of marking content as a possible target of a link is to assign an id attribute to the element that wraps that content.
+
+As you know by now, the value of an id attribute of any element within a single HTML page must be unique. Therefore, assigning an id attribute to an element with a unique value creates a unique target name as well.</p>
+  </section>
+  <section id="section5">
+    <h2>(#section5) Section 5</h2>
+    <p>For example, <section id="area51">...</section> would create a unique target name, provided you don’t have any other element with the id equal to area51. If you have another element in the HTML page with the same id value, the HTML itself is already invalid.
+
+Creating a Link to a Fragment Identifier
+Once we have a targetable element, we can create a link that, once clicked, will instruct the browser to scroll/jump the page to that element.
+
+We do this with the help of the <a> tag and its href attribute. (href stands for hypertext reference.)
+
+The value of the href attribute has to be the value of the target we specified in the previous step, prepended with a # character.
+
+For example, to target <section id="area51">...</section>, our link will look like this:</p>
+    <p>
+      <a href="#top">Back to Page Heading</a> or
+      <a href="#">Back to Top of Page</a>
+    </p>
+  </section>
+</body>
+</html>

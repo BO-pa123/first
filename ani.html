@@ -1,0 +1,44 @@
+
+<html>
+<title>Cyber book sores</title>
+<body bgcolor="cadetblue">
+<marquee behavior="scroll">Welcome to Cyber Book Stores</marquee>
+<center>
+<form name="f1">
+Select a book to view details:<select name="books">
+<option value="book1">book1</option>
+<option value="book2">book2</option>
+<option value="book3">book3</option>
+<option value="book4">book4</option>
+<option value="book5">book5</option></select>
+<br><br>
+<input type="button" value="Display" onclick="display()">
+</form>
+</center>
+<script language="javascript">
+var i,j;
+function display()
+{
+j=document.f1.books.length;
+for(i=0;i<j;i++)
+{
+if(document.f1.books[i].selected)
+{
+if(document.f1.books[i].value=='book1')
+window.open("book1.html");
+else if(document.f1.books[i].value=='book2')
+window.open("book2.html");
+else if(document.f1.books[i].value=='book3')
+window.open("book3.html");
+else if(document.f1.books[i].value=='book4')
+window.open("book4.html");
+else if(document.f1.books[i].value=='book5')
+window.open("book5.html");
+else
+document.write("not valid");
+}
+}
+}
+</script>
+</body>
+</html>

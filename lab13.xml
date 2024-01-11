@@ -1,0 +1,42 @@
+<?xml-stylesheet type="text/css" href="lab13css.css" ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<h1>
+ STUDENTS DESCRIPTION </h1>
+</head>
+<students>
+<student>
+<id>ID : A101</id>
+<name>NAME : EKANSH</name>
+<college>COLLEGE : VVIT</college>
+<branch>BRANCH : IT</branch>
+<year>YEAR : 2023</year>
+<e-mail>E-Mail : ekansh@gmail.com</e-mail>
+</student>
+<student>
+<id>ID : A102</id>
+<name>NAME : PRAVISTMISHRA</name>
+<college>COLLEGE : VVIT</college>
+<branch>BRANCH : IT</branch>
+<year>YEAR : 2023</year>
+<e-mail>E-Mail : pravist123@gmail.com</e-mail>
+</student>
+<student>
+<id>ID : A103</id>
+<name>NAME : MEHAK</name>
+<college>COLLEGE : VVIT</college>
+<branch>BRANCH : IT</branch>
+<year>YEAR : 2023</year>
+<e-mail>E-Mail : mehak@gmail.com</e-mail>
+</student>
+<student>
+<id>ID : A104</id>  
+<name>NAME : SHLOK</name>
+<college>COLLEGE : VVIT</college>
+<branch>BRANCH : IT</branch>
+<year>YEAR : 2023</year>
+<e-mail>E-Mail : shlok@gmail.com</e-mail>
+</student>
+</students>
+</html>

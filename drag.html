@@ -1,0 +1,24 @@
+<html>
+<body>
+<div id="division" style="height:300px; width:300px; border:1px solid;" ondragover="allowDrop(event)" ondrop="drop(event)"></div><br><br>
+<img src="earth.jpg" dragabble="true" alt="dragndrop" id="image" ondragstart="drag(event)" height="100" weight="100"/>
+
+<script>
+function drag(ev)
+{
+ev.dataTransfer.setData("text/html",ev.target.id);
+}
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("text/html");
+
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</body>
+</html>

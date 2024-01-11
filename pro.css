@@ -1,0 +1,17 @@
+.pro-heading{
+color:red;
+font-weight:bold;
+font-size:20px;
+text-align:center;
+}
+.pro-button{
+color:pink;
+background-color:green;
+height:35px;
+width:100px;
+border-radius:12px;
+}
+.pro-img{
+height:50vh;
+background-size:cover;
+}

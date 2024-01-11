@@ -1,0 +1,28 @@
+<html>
+<body>
+<button onclick="getmsg()">getmsg</button>
+<button onclick="computeJ()">compute</button>
+<script>
+ function getmsg()
+{
+alert("welcome to webworker");
+}
+function computeJ()
+{
+var w;
+if(typeof(Worker)!="undefined")
+{
+w=new Worker("worker.js");
+w.onmessage=function(event)
+{
+alert(event.data)
+}
+}
+else
+{
+alert("web browser is not supporting");
+}
+}
+</script>
+</body>
+</html>

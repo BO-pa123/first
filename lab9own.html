@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shadows</title>
+<link rel="stylesheet" href="style1.css">
+<style>
+h1{
+       text-shadow:2px 2px red;
+}
+div {
+  width: 300px;
+  height: 50px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px lightblue;
+}
+#rcorners1{
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  width: 300px;
+  height: 50px;
+
+}
+.box {
+        width: 50px;
+        height: 100px;
+        background-color: red;
+        transition: rotate(360);
+      }
+
+   .box:hover {
+        transform: rotate(45deg);
+}
+</style>
+</head>
+<body id="grad2" >
+<h1 align="center"> Webpage using CSS shadow</h1>
+<div>using box shadow</div>
+<p id="rcorners1">rounded corners</p>
+<p id="grad1">Radial gradient</p>
+<img src="bicycle.webp" alt="bicycle" width="100" height="200"><br><br>
+<p>Transitions and transforms</p>
+<div class="box"></div>
+</body>
+</html>

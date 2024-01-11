@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="getPosition()">watchposition</button>
+<button onclick="stopPosition()">StopWatch</button>
+<p id="demo"></p>
+<script>
+function getPosition() {
+  if (typeof(navigator.geolocation)!="undefined") {
+    clearId=navigator.geolocation.watchPosition(position);
+  } else { 
+    document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function position(pos) {
+  document.getElementById("demo").innerHTML = "Latitude: " + pos.coords.latitude + 
+  "<br>Longitude: " + pos.coords.longitude+"<br>altitude: "+pos.coords.altitude+"<br>accuracy: "+pos.coords.accuracy+"<br>timestamp: "+pos.coords.TimeStamp+"<br>speed: "+pos.coords.speed;
+}
+function stopPosition(pos){
+     document.getElementById("demo").innerHTML=navigator.geolocation.clearWatch(clearId);
+}
+</script>
+</body>
+</html>
+

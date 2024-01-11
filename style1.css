@@ -1,0 +1,26 @@
+#grad1 {
+  height: 50px;
+  width: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red, yellow, green);
+}
+#grad2 {
+  height: 200px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+@keyframes bicycle{
+  from {left:0px;}
+  to {left:300px;}
+}
+img {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position:relative;
+  animation-name: bicycle;
+  animation-duration: 4s;
+  animation-delay: 1s;
+} 
+
+

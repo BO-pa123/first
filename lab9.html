@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shadows</title>
+	<style>
+.box {
+        width: 250px;
+        height: 250px;
+        background-color: red;
+        transition: rotate(360);
+      }
+
+   .box:hover {
+        transform: rotate(45deg);
+      }
+		@keyframes myAnimation {
+			from {transform: rotate(0deg);}
+			to {transform: rotate(360deg);}
+		}
+
+		img {
+			animation-name: myAnimation;
+			animation-duration: 5s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			height=40px;
+			width=20px;
+		}
+		body {
+			background-image: linear-gradient(to bottom, #ffffff 0%,  #ff2d55 100%);
+
+			background-image: radial-gradient(circle at 40% 80%, #ffffff 0%,  #ff2d55 100%);
+			
+		}
+		h1 {
+			text-shadow: 2px 2px 4px #333333;
+			font-size: 30px;
+			color:  black;
+			padding: 20px;
+			border-radius: 20px;
+			background-color: pink;
+			box-shadow: 2px 2px 4px #000000;
+			display: inline-block;
+			margin: 40px;
+		}
+		p {
+			text-shadow: 2px 2px 4px #000000;
+			font-size: 24px;
+			color: blue;
+			padding: 20px;
+			border-radius: 30px;
+			background-color: #ffffff;
+			box-shadow: 10px 20px 3px  green inset;
+			display: inline-block;
+			margin: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>About Text Shadow</h1>
+	
+	<p>The text-shadow CSS property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and any of its decorations . Each shadow is described by some combination of X and Y offsets from the element, blur radius, and color.</p>
+<h1> About Box Shadow</h1>
+	<p>The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.</p>
+<h1> About Round corners</h1>
+	<p>CSS3 Rounded corners are used to add special colored corner to body or text by using the border-radius property.</p><br>
+
+
+<h1> Animation</h1><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<img src="im1.webp" alt="My Image" width="400"  height="379"><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h1>Transitions and Transformations.</h><br>
+    <br>
+   <br>
+<div class="box"></div>
+	
+</body>
+</html>
