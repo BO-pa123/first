@@ -1,0 +1,24 @@
+<html>
+<body>
+<progress id="progress" value="50" max="100"></progress>
+<p id="progresstext">task completed....50%</p>
+<button onclick="updateprogress()">show progress</button>
+<script>
+function updateprogress()
+{
+   var pr=document.getElementById("progress");
+   var prtext=document.getElementById("progresstext");
+   var current=pr.value;
+   if(current<pr.max)
+   {
+     pr.value=current+10;
+     var per=(pr.value/pr.max)*100;
+     prtext.textContent="task Completed..."+per+"%";
+   }
+   else
+     prtext.textContent="task Completed!";
+ }
+</script>
+</body>
+</html>
+   
